@@ -1,69 +1,101 @@
 <html>
     <head>
         <title>
-            form 
+            My feedback form
         </title>
-      </head>
-      <body>
-        
-<form>
-
-<h1 dir="ltr">
-   <em> my feedback form </em>
-</h1>
-<form dir="ltr">
-    <label for=". name">. name:</label>
-    <input type="text" id=" name" placeholder="نام خود را وارد کنید"><br>
-    <label for=". email">. email:</label>
-    <input type="email" id=" email" placeholder="ایمیل خود را وارد کنید"><br>
-    <label for=". password">. password:</label>
-    <input type="password" id=" password" placeholder="پسورد خود را وارد کنید"><br>
- <h2>
-    . please check all the emotions that apply to you:
- </h2>
- <label for="angry" >. Angry </label>
- <input type="checkbox" id="angry" name="Angry"><br>
- <label for="sad">. sad </label>
-<input type="checkbox" id="sad" name="sad"><br>
-<label for="happy">. Happy </label>
-<input type="checkbox" id="happy" name="happy"><br>
-<label for="ambivalent">. Ambivalent</label>
-<input type="checkbox" id="ambivalent" name="ambivalent"><br>
-<h3>
-    . How satisfied were you with our service?
-</h3>
-<label for="radio">. Very satisfied</label>
-<input type="radio" name="radio">
-<br>
-<label  for="radio">. Satisfied</label>
-<input type="radio" name="radio">
-<br>
-<label for="radio">. Didnt care</label>
-<input type="radio" name="radio">
-<br>
-<label for="radio">. Dissatisfied </label>
- <input type="radio" name="radio">
- <br>
- <label for="radio">. Very Dissatisfied</label>
- <input type="radio" name="radio">
- <br>
-<label for="Further comments">. Further comments :</label>
-    <textarea  id="Further comments"></textarea><br>
-    <label for="bio"> . Bio photo :</label>
-    <input type="file" id="bio" name="image"><br>
-    <label for="select">.select locaation</label>
-    <select id="selext">
-    <option selected disabled>select location</option>
-        <option value="tehran">tehran</option>
-        <option value="amol">amol</option>
-        <option value="sari">sari</option>
-    </select><br>
-    <br>
-<label for="sumit">.</label>
-<input type="submit">
-
-
-</label>
-</form>
-      </body>
+    </head>
+    <body>
+        <h1 dir="ltr"><em>My feedback form</em></h1>
+        <form dir="ltr" action="#" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </li>
+                <li>
+                    Please check all the emotions that apply to you:
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="emotions" value="angry" checked> Angry
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="emotions" value="sad"> Sad
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="emotions" value="happy"> Happy
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="emotions" value="ambivalent"> Ambivalent
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    How satisfied were you with our service?
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="satisfaction" value="very_satisfied" checked> Very satisfied
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="satisfaction" value="didnt_care"> Didn't care
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="satisfaction" value="very_dissatisfied"> Very dissatisfied
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="comments">Further comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                </li>
+                <li>
+                    <label for="bio">Bio photo:</label>
+                    <input type="file" id="bio" name="bio">
+                </li>
+                <li>
+                    <label for="location">Location visited:</label>
+                    <select id="location" name="location">
+                        <option value="" selected disabled>Select location</option>
+                        <option value="tehran">Tehran</option>
+                        <option value="amol">Amol</option>
+                        <option value="sari">Sari</option>
+                    </select>
+                </li>
+                <li>
+                    <button type="submit">submit</button>
+                </li>
+            </ul>
+        </form>
+    </body>
 </html>
