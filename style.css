@@ -1,3 +1,62 @@
+/* Main container layout based on whiteboard design */
+.main-container {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    margin: 20px;
+}
+
+/* Left section - larger rectangle */
+.left-section {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Right section - smaller rectangle */
+.right-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* Text styling based on whiteboard */
+.main-text {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.secondary-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.center-aligned {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Color scheme with yellow accents */
+.yellow-accent {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+/* Original styles preserved */
 h1 {
     color: aqua;
 }
@@ -9,27 +68,26 @@ label {
 h3 {
     color: blueviolet;
 }
+
 p {
     color: blue;
 }
+
 .reed{
     color: brown;
-    border: 1px;;
+    border: 1px;
     border-color: aquamarine;
     border-style: double;
-    
 }
+
 .green{
     color: chartreuse;
 }
+
 p {
-    padding: top 30px;
+    padding-top: 30px;
     text-align: center;
     color: blueviolet;
-
-}
-p {
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
