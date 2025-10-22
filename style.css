@@ -14,7 +14,22 @@ p {
 }
 .reed{
     color: brown;
+    border: 1px;;
+    border-color: aquamarine;
+    border-style: double;
+    
 }
 .green{
     color: chartreuse;
+}
+p {
+    padding: top 30px;
+    text-align: center;
+    color: blueviolet;
+
+}
+p {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
